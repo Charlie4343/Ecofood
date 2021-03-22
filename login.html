@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Food</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Recursive:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="main-wrapper">
+    <div class="white-background">
+        <a id="buttonTop"><i class="fas fa-arrow-up"></i></a>
+        <header>
+            <section class="header-top">
+                <a id="logoButton" href="index.html"><img src="img/logo.png" alt="Eco Food"></a>
+                <article>
+                    <a href="login.html" class="button button_link" id="logInButton">Log in</a>
+                    <a id="show-card" href="#" class="cartLink" data-toggle="modal" data-target="#exampleModal">
+                        Cart <i class="fas fa-shopping-basket"></i> (<span id="count">0</span>)
+                    </a>
+                    <button id="clearCard" class="button">Clear card</button>
+                </article>
+            </section>
+            <nav id="menuToggle">
+                 <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" id="catalog">Catalog</a></li>                
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>               
+            </nav>
+            <hr>
+        </header>
+        <main>
+            <section class="carusel">
+                <button id="goback" class="button button-goback">Go back</button>
+                <div>
+                    <label for="userName">User *</label>
+                </div>
+                <div>
+                    <input id="username" type="text" name="userName" placeholder="username" />
+                </div>
+                <div>
+                    <label for="password">Password*</label>
+                </div>
+                <div>
+                    <input id="password" type="text" name="password" placeholder="password" />
+                </div>
+                <div>
+                    <label for="rememberMe">Remember Me</label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                </div>
+                <div>
+                    <input class="button button-goback" type="submit" value="Log in">
+                </div>
+            </section>
+            <hr>
