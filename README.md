@@ -1,2 +1,1 @@
-# Ecofood
-Ecofood
+# EcoFood
